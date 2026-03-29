@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Coordinates</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: monospace;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 20px;
+  background: black;
+  border: 2px solid white;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#lore {
+  display: none;
+  padding: 50px;
+  max-width: 800px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  margin: 20px 0;
+  filter: grayscale(100%) contrast(120%);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="center" id="start">
+
+<h2>28.474853, -16.305944</h2>
+
+<p>Find the word. Orange letters.</p>
+
+<input id="word">
+<button onclick="check()">OK</button>
+
+<p id="msg"></p>
+
+</div>
+
+<div id="lore">
+
+<h1>PROJECT 3303</h1>
+
+<p>
+Project 3303 began in 1987. The United States attempted to capture an unknown entity...
+</p>
+
+<img src="https://i.imgur.com/8Km9tLL.jpg">
+
+<p>
+The entity escaped. Angel Force was created to contain it...
+</p>
+
+<img src="https://i.imgur.com/3ZQ3Z7P.jpg">
+
+<p>
+Wyatt Caesar was the first to record it. The recording is known as "THE TAPE".
+</p>
+
+<img src="https://i.imgur.com/Fk5YwGk.jpg">
+
+<p>
+IM WYATT  
+HE PUNISHED ME  
+ITS YOUR FAULT
+</p>
+
+<p style="color:red;">
+DO NOT SEEK THE TAPE
+</p>
+
+</div>
+
+<script>
+
+function check(){
+  let input = document.getElementById("word").value.toLowerCase();
+
+  if(input === "seargore"){
+    document.getElementById("start").style.display = "none";
+    document.getElementById("lore").style.display = "block";
+  } else {
+    document.getElementById("msg").innerText = "Incorrect.";
+  }
+}
+
+</script>
+
+</body>
+</html>

@@ -40,11 +40,13 @@ button {
   padding: 50px;
   max-width: 800px;
   margin: auto;
+  line-height: 1.6;
 }
 
 img {
-  width: 100%;
-  margin: 20px 0;
+  width: 85%; /* un poco más pequeñas */
+  display: block;
+  margin: 25px auto;
   filter: grayscale(100%) contrast(120%);
 }
 </style>
@@ -57,7 +59,7 @@ img {
 
 <h2>28.474853, -16.305944</h2>
 
-<p>Find the word. Orange letters.8 letters.</p>
+<p>Find the word. Orange letters. 8 letters.</p>
 
 <input id="word">
 <button onclick="check()">OK</button>
@@ -68,43 +70,143 @@ img {
 
 <div id="lore">
 
-<h1>PROJECT 3303</h1>
+<h1>Project 3303 – Confidential Report</h1>
 
 <p>
-Project 3303 began in 1987. The United States attempted to capture an unknown entity...
+Project 3303 began in 1987. The United States attempted to capture an unknown entity (an angel), referred to as “3303”, in order to gain an advantage during the Cold War.
 </p>
 
-<img src="https://i.imgur.com/8Km9tLL.jpg">
-
 <p>
-The entity escaped. Angel Force was created to contain it...
+.First, they succeded. However, a few month later the operation failed. The entity escaped.
 </p>
 
-<img src="https://i.imgur.com/3ZQ3Z7P.jpg">
+<img src="imagen1.jpg">
 
 <p>
-Wyatt Caesar was the first to record it. The recording is known as "THE TAPE".
+Shortly after, a special unit known as Angel Force was created under presidential order to locate and contain the entity. Years passed without success.
 </p>
 
-<img src="https://i.imgur.com/Fk5YwGk.jpg">
+<p>
+In 2003, a teenager named Wyatt Caesar, known for urbex, exploring abandoned locations, recorded something inside a cave in [REDACTED].
+</p>
+
+<img src="imagen2.jpg">
 
 <p>
-IM WYATT  
-HE PUNISHED ME  
-ITS YOUR FAULT
+He returned a second time.
+</p>
+
+<p>
+During that visit, the entity was captured on video.
+</p>
+
+<p>
+As previously documented, 3303 cannot be perceived by the human eye. It does not exist in three dimensions. Most individuals exposed to it either die or suffer severe psychological breakdown. Human brain just cant take it. First we thought Wyatt dissapeared, and died like everybody. But now we know he didnt. When 3303 saw he recorded it, it seemes like 3303 punished him.
+</p>
+
+<img src="imagen3.jpg">
+
+<p>
+Wyatt Caesar became the first human to successfully record it.
+</p>
+
+<p>
+This recording is what Angel Force refers to as:
+“THE TAPE.”
+</p>
+
+<p>
+The video was briefly uploaded online before being removed. Despite this, it spread among younger audiences. Reports described it as “cursed”.
+</p>
+
+<img src="imagen4.jpg">
+
+<p>
+These claims are not entirely false.
+</p>
+
+<p>
+No known individual who has fully witnessed the tape remains mentally stable.
+</p>
+
+<p>
+Wyatt Caesar was presumed dead. But as I said before, he was not.
+</p>
+
+<img src="imagen5.jpg">
+
+<p>
+By 2010, multiple systems in the Angel Force center were compromised. Screens displayed the following message:
 </p>
 
 <p style="color:red;">
-DO NOT SEEK THE TAPE
+“IM WYATT”<br>
+“HE PUNISHED ME”<br>
+“ITS YOUR FAULT”
+</p>
+
+<p>
+The message then repeated in Morse code.
+</p>
+
+<p>
+Witnesses reported a human figure levitating before disappearing.
+</p>
+
+<img src="imagen6.jpg">
+
+<p>
+Since then, sightings of Wyatt have been reported.
+</p>
+
+<p>
+People all around the world have seen him. As a glitch, a shadow. He usually just begs for help, like he is trapped in another world.
+His behavior is inconsistent. At times, he appears hostile. At others, he seems to be begging for help.
+</p>
+
+<p>
+We have classified him as:
+Project 404.
+</p>
+
+<img src="imagen7.jpg">
+
+<p>
+We still dont know if Wyatt (404) is some sort fo monster, or just a soul that begs for help.
+</p>
+
+<p>
+The connection between 3303 and 404 remains unknown. However, it is believed that 3303 altered Wyatt in some way. Like 3303 transformed him into something horrible.
+</p>
+
+<p style="color:red;">
+DO NOT SEEK THE TAPE.
+</p>
+
+<p>
+What we call "THE TAPE", is the only time 3303 has been recorded. If you somehow find it, do not watch it. OTHERWISE, you will die. Human brain just cant take it, beacuse the angel is not in three dimentions. We, Angel Force, are still looking for 3303. He is extremely dangerous. Also, he seems to have a terrible hatred towards humans for what they did to him.
+</p>
+
+<img src="imagen8.jpg">
+
+<p>
+If you encounter Wyatt:
+Run. Run, as fast as you can. He is not human anymore.
+</p>
+
+<p>
+If you find THE TAPE, set it on fire.
+</p>
+
+<p>
+If you find 3303, and you're still thinking, and alive probably you havent found it nor seen it yet.
 </p>
 
 </div>
 
 <script>
-
 function check(){
   let input = document.getElementById("word").value.toLowerCase();
-
   if(input === "seargore"){
     document.getElementById("start").style.display = "none";
     document.getElementById("lore").style.display = "block";
@@ -112,8 +214,19 @@ function check(){
     document.getElementById("msg").innerText = "Incorrect.";
   }
 }
-
 </script>
 
 </body>
 </html>
+
+✅ Ahora solo:
+
+Sube tus imágenes reales al repo.
+Cambia imagen1.jpg, imagen2.jpg, etc. por sus nombres reales.
+
+Cuando alguien ponga SEARGORE, se desbloqueará TODO el lore con scroll, imágenes y estilo ARG.
+
+Si quieres, el siguiente paso puede ser:
+🔥 añadir glitches o efectos creepy al hacer scroll para que sea mucho más inmersivo.
+
+¿Quieres que haga eso?
